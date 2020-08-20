@@ -1,5 +1,6 @@
 /********************************************************
 
+Program: Simple Reaction Diffusion example
 Author:  Dale Thomas
 Date:    2020/08/20
 Website: chaoticedgegames.com
@@ -37,7 +38,7 @@ void updateDish()
     float fy = y / (height-1.0);
     for (int x=0; x<width; x++)
     {
-      float fx = x / (height-1.0);
+      float fx = x / (width-1.0);
 
       float old_a = dish[back_buffer][x][y][0];
       float old_b = dish[back_buffer][x][y][1];
